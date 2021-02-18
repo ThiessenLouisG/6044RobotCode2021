@@ -1,0 +1,27 @@
+C:\Users\Robotics>frc-characterization drive new
+2021-02-17 11:19:38,891:891 INFO    : logger              : Config: {'motorPorts': [0, 1], 'rightMotorPorts': [2, 3], 'controllerTypes': ['WPI_TalonSRX', 'WPI_TalonSRX'], 'rightControllerTypes': ['WPI_TalonSRX', 'WPI_TalonSRX'], 'motorsInverted': [False, False], 'rightMotorsInverted': [False, False], 'encoderEPR': 16384, 'gearing': 1, 'encoderPorts': [0], 'rightEncoderPorts': [2], 'encoderInverted': False, 'rightEncoderInverted': False, 'gyroType': 'None', 'gyroPort': '', 'controlType': 'Simple'}
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "c:\users\robotics\appdata\local\programs\python\python39\lib\site-packages\frc_characterization\newproject\__init__.py", line 150, in genProject
+    with resources.path(res, "project") as path:
+  File "c:\users\robotics\appdata\local\programs\python\python39\lib\contextlib.py", line 117, in __enter__
+    return next(self.gen)
+  File "c:\users\robotics\appdata\local\programs\python\python39\lib\importlib\resources.py", line 175, in _path_from_reader
+    opener_reader = reader.open_resource(norm_resource)
+  File "<frozen importlib._bootstrap_external>", line 995, in open_resource
+PermissionError: [Errno 13] Permission denied: 'c:\\users\\robotics\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\frc_characterization\\robot\\project'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\robotics\appdata\local\programs\python\python39\lib\tkinter\__init__.py", line 1884, in __call__
+    return self.func(*args)
+  File "c:\users\robotics\appdata\local\programs\python\python39\lib\site-packages\frc_characterization\newproject\__init__.py", line 177, in genProject
+    shutil.rmtree(dst)
+  File "c:\users\robotics\appdata\local\programs\python\python39\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "c:\users\robotics\appdata\local\programs\python\python39\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "c:\users\robotics\appdata\local\programs\python\python39\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:/Users/Robotics/Desktop/robotCode/Louis/FRC Characterization\\characterization-project'
